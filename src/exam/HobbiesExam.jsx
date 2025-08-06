@@ -1,22 +1,19 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-const HOBBIES = ['영화', '음악감상', '산책', '게임하기']
+const HOBBIES = ["영화", "음악감상", "산책", "게임하기"];
 
 export default function HobbiesExam() {
-    
-  const [selected, setSelected] = useState([])
-  const [result, setResult] = useState('')
+  const [selected, setSelected] = useState([]);
+  const [result, setResult] = useState("");
 
   const handleChange = (e) => {
-    const { value, checked } = e.target
-    setSelected((prev) =>
-      checked ? [...prev, value] : prev.filter((v) => v !== value)
-    )
-  }
+    const { value, checked } = e.target;
+    setSelected((prev) => (checked ? [...prev, value] : prev.filter((v) => v !== value)));
+  };
 
   const showHobbies = () => {
-    setResult(selected.length > 0 ? selected.join(', ') : '선택 없음')
-  }
+    setResult(selected.length > 0 ? selected.join(", ") : "선택 없음");
+  };
 
   return (
     <div>
@@ -37,5 +34,5 @@ export default function HobbiesExam() {
       </div>
       <p data-testid="result">{result}</p>
     </div>
-  )
+  );
 }
