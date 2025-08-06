@@ -1,12 +1,15 @@
-# React + Vite
+# exam-react-test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+리액트 컴포넌트 테스트용 프로젝트입니다.  
+`src/exam/` 폴더 안의 JSX 파일들을 테스트 목적으로 작성합니다.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 폴더 구조
 
-## Expanding the ESLint configuration
+### src/test/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- CounterExam.test.jsx
+- HobbiesExam.test.jsx
+- LoginExam.test.jsx
+- TodoList.test.jsx
